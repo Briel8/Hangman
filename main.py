@@ -67,6 +67,8 @@ class Hangman:
                 self.congratulations()
                 break
             self.display()
+        if self.won() != True:
+            print("You Loose!")
 
 game = Hangman()
 game.play()
